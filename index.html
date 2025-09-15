@@ -1,14 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Brat Vortex - Generator pesan brat dengan emoji" />
+    <meta name="theme-color" content="#38bdf8" />
     <title>Brat Vortex</title>
-    <link href="/dist/output.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- Tailwind (kalau pakai Vite/CRA, tetap diproses di index.css) -->
+    <link rel="stylesheet" href="/src/index.css" />
   </head>
-  <body class="bg-gradient-to-b from-sky-50 to-white">
+  <body class="bg-gradient-to-b from-sky-50 to-white min-h-screen">
+    <noscript>
+      <div style="padding:2rem; text-align:center; color:#ef4444; font-weight:bold;">
+        Aplikasi ini membutuhkan JavaScript untuk berjalan dengan baik.
+      </div>
+    </noscript>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Script React entry -->
+    <script type="module" src="/src/index.js"></script>
   </body>
 </html>
-```
